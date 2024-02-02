@@ -1,5 +1,6 @@
 from PIL import Image, ImageDraw
-import math, numpy as np
+from math import *
+import numpy as np
 import matplotlib.pyplot as plt
 from random import random
 
@@ -95,10 +96,10 @@ class fish:
         sumrad = 0
         n = 0
         for index in list:
-            radsum = radsum + fishlist[index].rad
+            randsum = randsum + fishlist[index].rad
             n = n + 1
         randave = randsum / n
-        self.a = self.Ma * np.array([cos(randave),cos(rand(ave))]) *(0.7 + 0.3*cos((radave - self.rad)/2))
+        self.a = self.Ma * np.array([cos(randave),cos(randave)]) *(0.7 + 0.3*cos((randave - self.rad)/2))
 
     def moveC(self,list):
         sumr = np.array([0,0])
